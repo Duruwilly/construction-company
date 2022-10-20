@@ -4595,7 +4595,7 @@ button {
     display: block;
 }
 
-.footer-widget__services-list-item a {
+.footer-widget__services-list-item a, .footer-widget__services-list-item span {
     position: relative;
     display: inline-block;
     color: rgba(255, 255, 255, .7);
@@ -4607,7 +4607,7 @@ button {
     transition-delay: 0.1s;
 }
 
-.footer-widget__services-list-item a:before {
+.footer-widget__services-list-item a:before, .footer-widget__services-list-item span:before {
     content: '';
     position: absolute;
     left: 0;
@@ -4623,7 +4623,7 @@ button {
     z-index: 2;
 }
 
-.footer-widget__services-list-item a:hover:before {
+.footer-widget__services-list-item a:hover:before, .footer-widget__services-list-item span:hover:before {
     transform: perspective(400px) scaleX(1.0);
 }
 
