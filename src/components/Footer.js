@@ -7,7 +7,7 @@ import "../assets/vendors/bootstrap/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import Logo from "../assets/images/HisestLogo.png";
+import Logo from "../assets/images/HisestLogoWhite.png";
 
 const Footer = () => {
   return (
@@ -37,8 +37,7 @@ const Footer = () => {
                         </Link>
                       </div>
                       <p className="footer-widget__about-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quisquam, provident.
+                      At Hisest, We equally attach high premium to constant training of all cetegories of <br /> our personnel to meet with new challenges.
                       </p>
                       <div className="footer-widget__about-social-link">
                         <ul>

@@ -897,7 +897,7 @@ button {
     position: absolute;
     right: -15px;
     font-family: 'icomoon' !important;
-    content: "\e916";
+    content: "";
     color: var(--thm-black);
     font-size: 12px;
     line-height: 30px;
@@ -2866,13 +2866,13 @@ button {
 .services-one__single-content {
     position: relative;
     display: block;
-    padding: 25px 0px 30px;
+    padding: 25px 0px 0px;
 }
 
 .services-one__single-content-title {
     position: relative;
     display: block;
-    width: 275px;
+    width: 312px;
     padding: 13px 20px 11px;
     margin-bottom: 22px;
     overflow: hidden;
@@ -2896,9 +2896,13 @@ button {
 }
 
 .services-one__single-content-title h2 {
-    font-size: 22px;
-    line-height: 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
     text-transform: capitalize;
+    color: var(--thm-black);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
 }
 
 .services-one__single-content-title h2 a {
@@ -2907,7 +2911,7 @@ button {
     transition-delay: 0.1s;
 }
 
-.services-one__single-content-title h2 a:hover {
+.services-one__single-content-title h2:hover {
     color: var(--thm-base);
 }
 
@@ -4997,7 +5001,7 @@ button {
 .about-two__content-text2 .icon-box span::before {
     position: relative;
     display: inline-block;
-    color: var(--thm-gray);
+    color: #fff;
     font-size: 40px;
     line-height: 40px;
     font-weight: 700;

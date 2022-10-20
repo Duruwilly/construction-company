@@ -9,8 +9,19 @@ import "../assets/vendors/owl-carousel/owl.theme.default.min.css";
 import "owl.carousel";
 import "../assets/vendors/bootstrap/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import WOW from "wowjs";
+import "../assets/vendors/animate/animate.min.css";
+import "../assets/vendors/animate/custom-animate.css";
 
 const Teams = () => {
+  useEffect(() => {
+    new WOW.WOW({
+      boxClass: "wow",
+      animateClass: "animated",
+      mobile: true,
+      live: true,
+    }).init();
+  });
   const options = {
     loop: true,
     margin: 10,
@@ -46,9 +57,7 @@ const Teams = () => {
             <span className="left"></span>
             <h6>Our Team</h6> <span className="right"></span>
           </div>
-          <h2 className="sec-title__title">
-            Our Team At Hisest.
-          </h2>
+          <h2 className="sec-title__title">Our Team At Hisest.</h2>
         </div>
         <div className="row">
           <div className="col-xl-12">
@@ -56,85 +65,101 @@ const Teams = () => {
               className="project-three__carousel owl-carousel owl-theme"
               {...options}
             >
-              {/* single project */}
-              <div className="project-three__single">
-                <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
-                      <span className="icon-plus-sign">
-                       <AiOutlinePlus />
-                      </span>
-                    </a>
-                  </div> */}
-                  <div className="content-box">
-                    <p>construction</p>
-                    <h3>dowson construction</h3>
+              {/* team 1 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
+                      <h2>
+                        Chief Engr. Bankole Akintemihin (B.Tech Eng, MNSE,
+                        COREN)
+                      </h2>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* project two */}
-              <div className="project-three__single">
-                <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
-                      <span className="icon-plus-sign"></span>
-                    </a>
-                  </div> */}
-                  <div className="content-box">
-                    <p>construction</p>
-                    <h3>dowson construction</h3>
+              {/* team 2 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
+                      <h2>Oluwabunmi Samuel (DIP. MASCOM, B.Ed)</h2>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* project three */}
-              <div className="project-three__single">
-                <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
-                      <span className="icon-plus-sign"></span>
-                    </a>
-                  </div> */}
-                  <div className="content-box">
-                    <p>construction</p>
-                    <h3>dowson construction</h3>
+              {/* team 3 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
+                      <h2>Olaseni Tiraoluwa (HND Acct.)</h2>
+                    </div>
                   </div>
                 </div>
               </div>
-              {/* project 4 */}
-              <div className="project-three__single">
-                <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
-                      <span className="icon-plus-sign"></span>
-                    </a>
-                  </div> */}
-                  <div className="content-box">
-                    <p>construction</p>
-                    <h3>dowson construction</h3>
+
+              {/* team 4 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
+                      <h2>Oloruntobi Oyedeji</h2>
+                    </div>
                   </div>
                 </div>
               </div>
-              {/* project ends */}
+              {/* team 5 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
+                      <h2>
+                        Olaseni Emmanuel (HND Surv, Bsc. Surv. ANIS, SURCON)
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* teams ends */}
             </OwlCarousel>
-          </div>
-          <div className="col-xl-12">
-            <div className="project-three-more-project-btn text-center">
-              <div className="btn-box">
-                <Link
-                  to="/projects"
-                  className="thm-btn"
-                  data-text="View All Projects"
-                >
-                  View All Projects
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>

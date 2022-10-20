@@ -49,14 +49,13 @@ const Heroe = () => {
             <div className="container">
               <div className="row clearfix">
                 <div className="col-x1-12">
-                  <div className="slider-one__single-content">
-                    <h3>Construction Business</h3>
+                  <div className="slider-one__single-content text-center">
+                  <h3>Quality Construction Services.</h3>
                     <h2>
-                      We build something new <br /> and consistent
+                      We construct using modern <br /> technology
                     </h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae, ipsa? <br /> Lorem ipsum dolor sit amet.
+                    At Hisest, We equally attach high premium to constant training <br /> of all cetegories of our personnel to meet with new challenges.
                     </p>
                     <div className="btn-box">
                       <Link
@@ -84,16 +83,13 @@ const Heroe = () => {
               <div className="row clearfix">
                 <div className="col-x1-12">
                   <div className="slider-one__single-content text-center">
-                    <h3>Our Top Construction.</h3>
+                  <h3>High Premium Services.</h3>
                     <h2>
-                      A Modern Construction & <br /> Industrial
+                       Modern Construction & <br /> Management
                     </h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae, ipsa? <br /> Lorem ipsum dolor sit amet.
-                    </p>
+                    <p>At Hisest, We equally attach high premium to constant training of all cetegories of <br /> our personnel to meet with new challenges.</p>
                     <div className="btn-box">
-                      <Link to="/" className="thm-btn" data-text="Read More +">
+                      <Link to="/" className="thm-btn" data-text="Request Quote">
                         Request Quote
                       </Link>
                     </div>
@@ -113,17 +109,16 @@ const Heroe = () => {
             <div className="container">
               <div className="row clearfix">
                 <div className="col-x1-12">
-                  <div className="slider-one__single-content">
-                    <h3>Our Top Construction.</h3>
+                  <div className="slider-one__single-content text-center">
+                    <h3>Quality Construction Services.</h3>
                     <h2>
                       Best solution for <br /> construction
                     </h2>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Vitae, ipsa? <br /> Lorem ipsum dolor sit amet.
+                    At Hisest, We equally attach high premium to constant training of all cetegories of <br /> our personnel to meet with new challenges.
                     </p>
                     <div className="btn-box">
-                      <Link to="/" className="thm-btn" data-text="Read More +">
+                      <Link to="/" className="thm-btn" data-text="Request Quote">
                         Request Quote
                       </Link>
                     </div>

@@ -1,5 +1,6 @@
 import React, { useState} from "react";
 import { FaBars } from "react-icons/fa";
+import { BsArrowDownShort } from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import Logo from '../assets/images/HisestLogo.png'
 import Mobilenav from "./Mobilenav";
@@ -23,14 +24,14 @@ const Navbar = () => {
             <li className="current">
               <Link to="/">Home</Link>
             </li>
-            <li className="dropdown">
+            <li>
               <Link to="/about">About</Link>
             </li>
-            <li className="dropdown">
+            <li>
               <Link to="/services">Services</Link>
             </li>
             <li className="dropdown">
-              <Link to="/subsidiaries">Subsidiaries</Link>
+              <Link to="/subsidiaries">Subsidiaries <BsArrowDownShort /></Link>
               <ul>
                 <li>
                   <Link to="/senitechplus">Senitechplus</Link>

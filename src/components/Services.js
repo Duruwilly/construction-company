@@ -4,9 +4,9 @@ import services2 from '../assets/images/update1.0/services-v3-shape2.png'
 import IcomoonReact from 'icomoon-react'
 import iconSet from '../../src/selection.json'
 
-
-
-import Heroe1 from "../assets/images/heroe1.jpg";
+import ServicesImg from "../assets/images/hisest3.jpeg";
+import FacilityBg from "../assets/images/facilityBg.jpeg";
+import SurveyBg from "../assets/images/hisest9.jpeg";
 
 const Services = () => {
   return (
@@ -26,13 +26,12 @@ const Services = () => {
                   <h6>COMPANY SERVICES</h6> <span className="right"></span>
                 </div>
                 <h2 className="sec-title__title">
-                  Our Company Best <br /> Services
+                  Quality Construction <br /> Services
                 </h2>
               </div>
               <div className="text-box">
                 <p>
-                  There are many variations of pasagges of Lorem ipsum dolor sit
-                  amet. <br /> the best have suffered alteracation in some form.
+                Leading consulting and Engineering firms in Nigeria <br /> for quality project.
                 </p>
               </div>
             </div>
@@ -44,7 +43,7 @@ const Services = () => {
             <div className="services-three__single active">
               <div
                 className="services-three__single__bg"
-                style={{ backgroundImage: `url(${Heroe1})` }}
+                style={{ backgroundImage: `url(${ServicesImg})` }}
               ></div>
               <div className="services-three__single-icon">
                 <IcomoonReact
@@ -56,8 +55,7 @@ const Services = () => {
               </div>
               <h3>Civil Construction</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat, quae!
+                Our civil construction projects often involve any large undertaking that involves public infrastructure, including natural and manmade structures, some of our civil construction projects includes construction of Trailer Park, construction of Retaining wall at BHN Trailer Park
               </p>
             </div>
           </div>
@@ -66,7 +64,7 @@ const Services = () => {
             <div className="services-three__single">
               <div
                 className="services-three__single__bg"
-                style={{ backgroundImage: `url(${Heroe1})` }}
+                style={{ backgroundImage: `url(${ServicesImg})` }}
               ></div>
               <div className="services-three__single-icon">
                 <IcomoonReact
@@ -78,8 +76,7 @@ const Services = () => {
               </div>
               <h3>Procurement</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat, quae!
+              We purchase materials for clients which involves every goods and services a company needs to support it's daily operations some of our services rendered involves heavy duty vacuum cleaner, fencing light, indusrial fencing protective equipment.
               </p>
             </div>
           </div>
@@ -88,7 +85,7 @@ const Services = () => {
             <div className="services-three__single">
               <div
                 className="services-three__single__bg"
-                style={{ backgroundImage: `url(${Heroe1})` }}
+                style={{ backgroundImage: `url(${FacilityBg})` }}
               ></div>
               <div className="services-three__single-icon">
                 <IcomoonReact
@@ -100,8 +97,7 @@ const Services = () => {
               </div>
               <h3>Facility Management</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat, quae!
+                Our facility management service deals with certain facilities of another company or business. Our role involves managing different types of buildings used in companies. We ensure functionality, comfort safety, sustainabilty and efficiency of the buildings.
               </p>
             </div>
           </div>
@@ -110,7 +106,7 @@ const Services = () => {
             <div className="services-three__single">
               <div
                 className="services-three__single__bg"
-                style={{ backgroundImage: `url(${Heroe1})` }}
+                style={{ backgroundImage: `url(${SurveyBg})` }}
               ></div>
               <div className="services-three__single-icon">
                 <IcomoonReact
@@ -122,8 +118,7 @@ const Services = () => {
               </div>
               <h3>Engineering Survey</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellat, quae!
+                We carry out Engineering Survey activities required to support the sound conception, planning, design, construction, maintenance, and operation of engineered projects, which involves locating or laying out alignments, positions, or elevations for the construction of fixed works.
               </p>
             </div>
           </div>
