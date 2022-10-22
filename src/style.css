@@ -3258,6 +3258,7 @@ button {
     display: block;
 }
 
+
 .project-one__single-img .content-box {
     position: absolute;
     left: 0;
@@ -3282,6 +3283,7 @@ button {
     line-height: 32px;
     font-weight: 500;
     text-transform: capitalize;
+    color: #ffffff;
 }
 
 .project-one__single-img .content-box h2 a {

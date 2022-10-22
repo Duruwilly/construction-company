@@ -4,12 +4,11 @@ import './App.css';
 import "./responsive.css";
 import "./scrollbar.css";
 import "./style.css";
-import Home from './components/Home';
+import Home from './pages/Home'
 import Navbar from './components/Navbar';
 import jQuery from 'jquery';
 import Footer from './components/Footer';
-
-
+import About from './pages/About';
 
 function App() {
   const [loader, setLoader] = useState(true)
@@ -27,6 +26,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
       </Routes>
       <Footer />
       </BrowserRouter>
