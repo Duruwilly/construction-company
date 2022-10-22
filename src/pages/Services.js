@@ -86,13 +86,13 @@ const Services = () => {
             <div className="col-xl-12">
               <div className="page-header__wrapper">
                 <div className="page-header__content">
-                  <h2>Services Us</h2>
+                  <h2>Our Services</h2>
                   <div className="page-header__menu">
                     <ul>
                       <li>
-                        <a href="index.html">Home</a>
+                        <Link to='/'>Home</Link>
                       </li>
-                      <li>Services Us</li>
+                      <li>Services</li>
                     </ul>
                   </div>
                 </div>
