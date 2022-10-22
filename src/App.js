@@ -9,6 +9,8 @@ import Navbar from './components/Navbar';
 import jQuery from 'jquery';
 import Footer from './components/Footer';
 import About from './pages/About';
+import Services from './pages/Services';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
   const [loader, setLoader] = useState(true)
@@ -23,10 +25,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
       <Footer />
       </BrowserRouter>

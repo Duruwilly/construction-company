@@ -12,6 +12,7 @@
     "icomoon-react": "^3.0.0",
     "jarallax": "^2.0.4",
     "jquery": "^3.6.1",
+    "jquery.appear": "^1.0.1",
     "magnific-popup": "^1.1.0",
     "no-ui-slider": "^1.2.0",
     "nouislider": "^15.6.1",

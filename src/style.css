@@ -2866,6 +2866,12 @@ button {
 .services-one__single-content {
     position: relative;
     display: block;
+    padding: 25px 0px 30px;
+}
+
+.about__single-content {
+    position: relative;
+    display: block;
     padding: 25px 0px 0px;
 }
 
@@ -2924,6 +2930,7 @@ button {
 
 .services-one__single-content-bottom p {
     margin: 0;
+    color: rgba(0, 0, 0, .7);
 }
 
 .services-one__single-btn {

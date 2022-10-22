@@ -16,7 +16,7 @@ const Mobilenav = ({ toggle }) => {
         <FaTimes />
       </span>
       <div className="mobile-nav_container">
-        <ul className="mobile-menu">
+        <ul className="mobile-menu" onClick={toggle}>
           <li className="current">
             <Link to="/">Home</Link>
           </li>

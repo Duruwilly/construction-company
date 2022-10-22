@@ -132,15 +132,14 @@ const Footer = () => {
               <div class="footer-one__bottom-inner">
                 <div class="footer-one__bottom-text">
                   <p>
-                    Copyright &copy;2022. All rights reserved to{" "}
-                    <a href="index.html">Hisest</a>
+                    Copyright &copy; 2022 <Link to='/'>Hisest</Link>. All rights reserved.
                   </p>
                 </div>
 
                 <div class="footer-one__bottom-list">
                   <ul>
                     <li>
-                      <Link to="/terms-and-condition">Terms & Conditins </Link>
+                      <Link to="/terms-and-condition">Terms & Conditions </Link>
                     </li>
                     <li>
                       <Link to="/services"> Services</Link>
