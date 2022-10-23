@@ -17,7 +17,7 @@ const VisionAndMission = () => {
         <div className="slider-bg-slide-overlay"></div>
         <div className="container">
           <div className="mission-vision-one__inner">
-            <div className="row">
+            <div className="row vision-flex">
               <div className="col-xl-6 col-lg-6 col-md-6">
                 <div className="mission-vision-one__single">
                   <div className="icon-box">
@@ -39,7 +39,7 @@ const VisionAndMission = () => {
                   <div className="icon-box">
                     <IcomoonReact
                       iconSet={iconSet}
-                      icon="road"
+                      icon="office"
                       color="white"
                       size={40}
                     />

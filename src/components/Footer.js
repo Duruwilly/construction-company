@@ -139,14 +139,15 @@ const Footer = () => {
                 <div class="footer-one__bottom-list">
                   <ul>
                     <li>
-                      <Link to="/terms-and-condition">Terms & Conditions </Link>
+                      {/* <Link to="/terms-and-condition">Terms & Conditions</Link> */}
+                      <Link to="/request-quote">Request Quote</Link>
                     </li>
                     <li>
                       <Link to="/services"> Services</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/careers">Careers</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>

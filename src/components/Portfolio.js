@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
 import { Link } from "react-router-dom";
-import Heroe1 from "../assets/images/heroe1.jpg";
-import Heroe2 from "../assets/images/heroe2.jpg";
-import Heroe3 from "../assets/images/heroe3.jpg";
+import project1 from "../assets/images/homeProject1.jpeg";
+import project2 from "../assets/images/homeProject2.jpeg";
+import project3 from "../assets/images/homeProject3.jpeg";
+import project4 from "../assets/images/homeProject4.jpeg";
+import project5 from "../assets/images/homeProject5.jpeg";
 import OwlCarousel from "react-owl-carousel";
 import "../assets/vendors/owl-carousel/owl.carousel.min.css";
 import "../assets/vendors/owl-carousel/owl.theme.default.min.css";
@@ -60,7 +62,7 @@ const Portfolio = () => {
               {/* single project */}
               <div className="project-three__single">
                 <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
+                  <img src={project1} alt="client" />
                   {/* <div className="icon-box">
                     <a href={Heroe1} className="img-popup">
                       <span className="icon-plus-sign">
@@ -69,9 +71,9 @@ const Portfolio = () => {
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>construction</p>
+                    <p>Renovation</p>
                     <h3>
-                      dowson construction
+                    Alluminium office <br /> partitioning
                     </h3>
                   </div>
                 </div>
@@ -80,7 +82,7 @@ const Portfolio = () => {
               {/* project two */}
               <div className="project-three__single">
                 <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
+                  <img src={project2} alt="client" />
                   {/* <div className="icon-box">
                     <a href={Heroe1} className="img-popup">
                       <span className="icon-plus-sign"></span>
@@ -89,7 +91,7 @@ const Portfolio = () => {
                   <div className="content-box">
                     <p>construction</p>
                     <h3>
-                      dowson construction
+                      Construction of trailer park
                     </h3>
                   </div>
                 </div>
@@ -98,16 +100,16 @@ const Portfolio = () => {
               {/* project three */}
               <div className="project-three__single">
                 <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
+                  <img src={project3} alt="client" />
                   {/* <div className="icon-box">
                     <a href={Heroe1} className="img-popup">
                       <span className="icon-plus-sign"></span>
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>construction</p>
+                    <p>installation</p>
                     <h3>
-                      dowson construction
+                      Roofing installation
                     </h3>
                   </div>
                 </div>
@@ -115,16 +117,16 @@ const Portfolio = () => {
               {/* project 4 */}
               <div className="project-three__single">
                 <div className="project-three__single-img">
-                  <img src={Heroe1} alt="client" />
+                  <img src={project5} alt="client" />
                   {/* <div className="icon-box">
                     <a href={Heroe1} className="img-popup">
                       <span className="icon-plus-sign"></span>
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>construction</p>
+                    <p>Renovation</p>
                     <h3>
-                      dowson construction
+                      Gate Renovation
                     </h3>
                   </div>
                 </div>

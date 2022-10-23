@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
           {/* nav menu */}
           <ul className="nav-menu" style={{ paddingRight: "16px" }}>
-            <li>
+            <li className="current">
               <Link to="/">Home</Link>
             </li>
             <li>

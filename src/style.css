@@ -10417,6 +10417,7 @@ Mission Vision One
     justify-content: cente;
     align-items: cente;
 }
+
 .mission-vision-one__single {
     position: relative;
     display: block;
@@ -13161,6 +13162,12 @@ Update1.0
         padding: 50px 40px 50px;
     }
 
+    /* .vision-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 3;
+    } */
+
     .mission-vision-one__single {
         padding: 50px 30px 42px;
     }
@@ -13385,6 +13392,12 @@ Update1.0
 
     .mission-vision-one__single {
         padding: 50px 30px 42px;
+    }
+
+    .vision-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 3;
     }
 
     .mission-vision-one__single {

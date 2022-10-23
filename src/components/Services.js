@@ -1,8 +1,8 @@
-import React from 'react'
-import services1 from '../assets/images/shapes/testimonials-v1-shape1.png'
-import services2 from '../assets/images/update1.0/services-v3-shape2.png'
-import IcomoonReact from 'icomoon-react'
-import iconSet from '../../src/selection.json'
+import React from "react";
+import services1 from "../assets/images/shapes/testimonials-v1-shape1.png";
+import services2 from "../assets/images/update1.0/services-v3-shape2.png";
+import IcomoonReact from "icomoon-react";
+import iconSet from "../../src/selection.json";
 
 import ServicesImg from "../assets/images/hisest3.jpeg";
 import FacilityBg from "../assets/images/facilityBg.jpeg";
@@ -31,7 +31,8 @@ const Services = () => {
               </div>
               <div className="text-box">
                 <p>
-                Leading consulting and Engineering firms in Nigeria <br /> for quality project.
+                  Leading consulting and Engineering firms in Nigeria <br /> for
+                  quality project.
                 </p>
               </div>
             </div>
@@ -55,7 +56,11 @@ const Services = () => {
               </div>
               <h3>Civil Construction</h3>
               <p>
-                Our civil construction projects often involve any large undertaking that involves public infrastructure, including natural and manmade structures, some of our civil construction projects includes construction of Trailer Park, construction of Retaining wall at BHN Trailer Park
+                Our civil construction projects often involve any large
+                undertaking that involves public infrastructure, including
+                natural and manmade structures, some of our civil construction
+                projects includes construction of Trailer Park, construction of
+                Retaining wall at BHN Trailer Park
               </p>
             </div>
           </div>
@@ -76,7 +81,10 @@ const Services = () => {
               </div>
               <h3>Procurement</h3>
               <p>
-              We purchase materials for clients which involves every goods and services a company needs to support it's daily operations some of our services rendered involves heavy duty vacuum cleaner, fencing light, indusrial fencing protective equipment.
+                We purchase materials for clients which involves every goods and
+                services a company needs to support it's daily operations some
+                of our services rendered involves heavy duty vacuum cleaner,
+                fencing light, indusrial fencing protective equipment.
               </p>
             </div>
           </div>
@@ -97,7 +105,11 @@ const Services = () => {
               </div>
               <h3>Facility Management</h3>
               <p>
-                Our facility management service deals with certain facilities of another company or business. Our role involves managing different types of buildings used in companies. We ensure functionality, comfort safety, sustainabilty and efficiency of the buildings.
+                Our facility management service deals with certain facilities of
+                another company or business. Our role involves managing
+                different types of buildings used in companies. We ensure
+                functionality, comfort safety, sustainabilty and efficiency of
+                the buildings.
               </p>
             </div>
           </div>
@@ -118,7 +130,11 @@ const Services = () => {
               </div>
               <h3>Engineering Survey</h3>
               <p>
-                We carry out Engineering Survey activities required to support the sound conception, planning, design, construction, maintenance, and operation of engineered projects, which involves locating or laying out alignments, positions, or elevations for the construction of fixed works.
+                We carry out Engineering Survey activities required to support
+                the sound conception, planning, design, construction,
+                maintenance, and operation of engineered projects, which
+                involves locating or laying out alignments, positions, or
+                elevations for the construction of fixed works.
               </p>
             </div>
           </div>
@@ -126,6 +142,6 @@ const Services = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Services
+export default Services;
