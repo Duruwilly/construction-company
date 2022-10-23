@@ -14,6 +14,8 @@ import Heroe2 from "../assets/images/heroe2.jpg";
 import Heroe3 from "../assets/images/heroe3.jpg";
 import Project1 from "../assets/images/project1.jpeg";
 import Project2 from "../assets/images/project2.jpeg";
+import Project3 from "../assets/images/trailer-park.jpeg";
+import installation from "../assets/images/installation2.jpeg";
 import AbtProjectBg from "../assets/images/project/project-v1-img1.jpg";
 import Projects from "../components/Projects";
 
@@ -119,16 +121,16 @@ const About = () => {
               <div className="feature-three__tab tabs-box">
                 <div className="feature-three__tab-button">
                   <ul className="tab-buttons clearfix">
-                    <li data-tab="#history" className="tab-btn active-btn">
+                    <li className="tab-btn active-btn">
                       <h3>Our Vision</h3>
                     </li>
-                    <li data-tab="#growth " className="tab-btn">
+                    <li className="tab-btn">
                       <h3>Our Mission</h3>
                     </li>
-                    <li data-tab="#mission" className="tab-btn">
+                    <li className="tab-btn">
                       <h3>Our Resources</h3>
                     </li>
-                    <li data-tab="#vision" className="tab-btn">
+                    <li className="tab-btn">
                       <h3>Human Capital</h3>
                     </li>
                   </ul>
@@ -136,7 +138,7 @@ const About = () => {
 
                 <div className="tabs-content">
                   {/* start tab */}
-                  <div className="tab active-tab" id="history">
+                  <div className="tab active-tab">
                     <div className="feature-three__tab-content-item">
                       <OwlCarousel
                         className="feature-three__history-carousel owl-carousel owl-theme"

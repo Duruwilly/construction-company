@@ -57,7 +57,7 @@ const Teams = () => {
             <span className="left"></span>
             <h6>Our Team</h6> <span className="right"></span>
           </div>
-          <h2 className="sec-title__title">Our Team At Hisest.</h2>
+          <h2 className="sec-title__title">Our Team At Hisest</h2>
         </div>
         <div className="row">
           <div className="col-xl-12">

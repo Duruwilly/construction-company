@@ -35,7 +35,7 @@ const About = () => {
               </div>
               <div className="text2">
                 <h4>
-                At Hisest, QUALITY as performance indicator is our key driver, to archive this feat; we have a team of highly trained and motivated professionals the industry can offer. We are adequately equipped with human resources, good construction tools and equipment to deliver any project within time frame, with advance technology, engineering sills, expertise and good understanding of expert design.
+                At Hisest, QUALITY as performance indicator is our key driver, to archive this feat; we have a team of highly trained and motivated professionals the industry can offer. We are adequately equipped with human resources, good construction tools and equipment to deliver any project within time frame, with advance technology, engineering skills, expertise and good understanding of expert design.
                 </h4>
               </div>
               <ul className="about-three__content-list">

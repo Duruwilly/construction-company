@@ -1,7 +1,12 @@
 import React from 'react'
 import Project1 from "../assets/images/project1.jpeg";
 import Project2 from "../assets/images/project2.jpeg";
-import AbtProjectBg from "../assets/images/project/project-v1-img1.jpg";
+import Project5 from "../assets/images/projects5.jpeg";
+import Project6 from "../assets/images/projects6.jpeg";
+import Project3 from "../assets/images/services3.jpeg";
+import Project4 from "../assets/images/services4.jpeg";
+import installation from "../assets/images/installation2.jpeg";
+import civilWork from "../assets/images/civil.jpeg";
 
 const Projects = () => {
   return (
@@ -29,14 +34,7 @@ const Projects = () => {
                   <li data-filter=".filter-item" className="active">
                     <span className="filter-text">
                       {" "}
-                      <i className="icon-hammer"></i> All Project
-                    </span>
-                  </li>
-                  <li data-filter=".factory">
-                    <span className="filter-text">
-                      {" "}
-                      <i className="icon-wrench"></i>
-                      Factory
+                      <i className="icon-hammer"></i> Factory
                     </span>
                   </li>
                   <li data-filter=".offices">
@@ -57,7 +55,7 @@ const Projects = () => {
                     <span className="filter-text">
                       {" "}
                       <i className="icon-hotel"></i>
-                      Building
+                      Buildings
                     </span>
                   </li>
                 </ul>
@@ -102,11 +100,11 @@ const Projects = () => {
               <div className="project-one__single">
                 <div className="project-one__single-img">
                   <div className="inner">
-                    <img src={Project1} alt="" />
+                    <img src={Project5} alt="" />
                   </div>
                   <div className="content-box">
-                    <h2>Texture Interture</h2>
-                    <p>Building Interior</p>
+                    <h2>Installation</h2>
+                    <p>Fabrication and Installation of safety cart ladder</p>
                   </div>
                 </div>
               </div>
@@ -117,11 +115,71 @@ const Projects = () => {
               <div className="project-one__single">
                 <div className="project-one__single-img">
                   <div className="inner">
-                    <img src={Project2} alt="" />
+                    <img src={Project6} alt="" />
                   </div>
                   <div className="content-box">
-                    <h2>Texture Interture</h2>
-                    <p>Building Interior</p>
+                    <h2>Renovation</h2>
+                    <p>Renovations of Realfruits factory Abeokuta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* project 5 */}
+            <div className="col-xl-3 col-lg-3 col-md-6 filter-item bulding offices">
+              <div className="project-one__single">
+                <div className="project-one__single-img">
+                  <div className="inner">
+                    <img src={installation} alt="" />
+                  </div>
+                  <div className="content-box">
+                    <h2>Installation</h2>
+                    <p>Installation of panel mesh</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* project 6 */}
+            <div className="col-xl-3 col-lg-3 col-md-6 filter-item bulding offices">
+              <div className="project-one__single">
+                <div className="project-one__single-img">
+                  <div className="inner">
+                    <img src={civilWork} alt="" />
+                  </div>
+                  <div className="content-box">
+                    <h2>Civil Construction</h2>
+                    <p>Casting of Reinforced floor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* project 7 */}
+            <div className="col-xl-3 col-lg-3 col-md-6 filter-item bulding offices">
+              <div className="project-one__single">
+                <div className="project-one__single-img">
+                  <div className="inner">
+                    <img src={Project3} alt="" />
+                  </div>
+                  <div className="content-box">
+                    <h2>Renovation</h2>
+                    <p>Renovation of factory at real fruit Ltd. Ogun state</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* project 8 */}
+            <div className="col-xl-3 col-lg-3 col-md-6 filter-item bulding offices">
+              <div className="project-one__single">
+                <div className="project-one__single-img">
+                  <div className="inner">
+                    <img src={Project4} alt="" />
+                  </div>
+                  <div className="content-box">
+                    <h2>Renovation</h2>
+                    <p>Renovations of Realfruits factory Abeokuta</p>
                   </div>
                 </div>
               </div>
