@@ -8,7 +8,7 @@ import Project4 from "../assets/images/services4.jpeg";
 import installation from "../assets/images/installation2.jpeg";
 import civilWork from "../assets/images/civil.jpeg";
 
-const Projects = () => {
+const FullProjects = () => {
   return (
     <section className="project-one-sec">
         <div className="shape1">
@@ -191,4 +191,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default FullProjects

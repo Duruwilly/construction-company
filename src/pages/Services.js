@@ -22,7 +22,7 @@ import ServiceBg from "../assets/images/servicesBg.jpg";
 import BgPattern from "../assets/images/shapes/why-choose-v2-shape1.png";
 import $ from "jquery";
 import "../../node_modules/jquery.appear/jquery.appear";
-import Projects from "../components/Projects";
+import HalfProjects from "../components/HalfProjects";
 
 const Services = () => {
   useEffect(() => {
@@ -204,7 +204,7 @@ const Services = () => {
       {/* end why chose us */}
 
       {/* project section */}
-      <Projects />
+      <HalfProjects />
 
       {/* services start */}
       <section className="services-one-sec services-one-sec--services">

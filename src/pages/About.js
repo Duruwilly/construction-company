@@ -17,7 +17,7 @@ import Project2 from "../assets/images/project2.jpeg";
 import Project3 from "../assets/images/trailer-park.jpeg";
 import installation from "../assets/images/installation2.jpeg";
 import AbtProjectBg from "../assets/images/project/project-v1-img1.jpg";
-import Projects from "../components/Projects";
+import Projects from "../components/HalfProjects";
 
 const About = () => {
   useEffect(() => {
