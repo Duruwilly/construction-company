@@ -109,7 +109,7 @@ const Portfolio = () => {
                   <div className="content-box">
                     <p>installation</p>
                     <h3>
-                      Roofing installation
+                      Roof restoration, installation and maintenance
                     </h3>
                   </div>
                 </div>
