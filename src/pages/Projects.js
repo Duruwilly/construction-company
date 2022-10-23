@@ -16,11 +16,11 @@ const Projects = () => {
                     <div className="col-xl-12">
                         <div className="page-header__wrapper">
                             <div className="page-header__content">
-                                <h2>Portfolio</h2>
+                                <h2>Projects</h2>
                                 <div className="page-header__menu">
                                     <ul>
                                         <li><Link to='/'>Home</Link></li>
-                                        <li>Portfolio</li>
+                                        <li>Projects</li>
                                     </ul>
                                 </div>
                             </div>
