@@ -71,7 +71,6 @@ const Portfolio = () => {
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>Renovation</p>
                     <h3>
                     Alluminium office <br /> partitioning
                     </h3>
@@ -89,7 +88,6 @@ const Portfolio = () => {
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>construction</p>
                     <h3>
                       Construction of trailer park
                     </h3>
@@ -107,7 +105,6 @@ const Portfolio = () => {
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>installation</p>
                     <h3>
                       Roof restoration, installation and maintenance
                     </h3>
@@ -124,9 +121,8 @@ const Portfolio = () => {
                     </a>
                   </div> */}
                   <div className="content-box">
-                    <p>Renovation</p>
                     <h3>
-                      Gate Renovation
+                      Gate house Renovation
                     </h3>
                   </div>
                 </div>
