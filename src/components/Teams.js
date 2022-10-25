@@ -158,6 +158,25 @@ const Teams = () => {
                   </div>
                 </div>
               </div>
+              {/* team 6 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
+                      <h2>
+                      Godspower Osarumese
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
               {/* teams ends */}
             </OwlCarousel>
           </div>

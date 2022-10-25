@@ -13,6 +13,7 @@ import "../assets/vendors/bootstrap/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 
+
 const Portfolio = () => {
  const options = {
    loop: true,
@@ -41,6 +42,36 @@ const Portfolio = () => {
      },
    },
  }; 
+
+//  function jQueryCode() {
+//    var groups = {};
+//    $(".img-popup").each(function () {
+//      var id = parseInt($(this).attr("data-group"), 10);
+ 
+//      if (!groups[id]) {
+//        groups[id] = [];
+//      }
+ 
+//      groups[id].push(this);
+//    });
+ 
+//    $.each(groups, function () {
+//      $(this).MagnificPopup({
+//        type: "image",
+//        closeOnContentClick: true,
+//        closeBtnInside: false,
+//        gallery: {
+//          enabled: true,
+//        },
+//      });
+//    });
+//  }
+
+//  useEffect(() => {
+//   jQueryCode()
+//  }, [])
+
+
   return (
     <section className="project-three">
       <div className="container-fluid">
@@ -63,13 +94,13 @@ const Portfolio = () => {
               <div className="project-three__single">
                 <div className="project-three__single-img">
                   <img src={project1} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
-                      <span className="icon-plus-sign">
+                  <div className="icon-box">
+                    {/* <a href={project1} className="img-popup">
+                      
                        <AiOutlinePlus />
-                      </span>
-                    </a>
-                  </div> */}
+                      
+                    </a> */}
+                  </div>
                   <div className="content-box">
                     <h3>
                     Alluminium office <br /> partitioning
@@ -82,11 +113,12 @@ const Portfolio = () => {
               <div className="project-three__single">
                 <div className="project-three__single-img">
                   <img src={project2} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
+                  <div className="icon-box">
+                    {/* <a href={project2} className="img-popup">
                       <span className="icon-plus-sign"></span>
-                    </a>
-                  </div> */}
+                      <AiOutlinePlus />
+                    </a> */}
+                  </div>
                   <div className="content-box">
                     <h3>
                       Construction of trailer park
@@ -99,11 +131,12 @@ const Portfolio = () => {
               <div className="project-three__single">
                 <div className="project-three__single-img">
                   <img src={project3} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
+                  <div className="icon-box">
+                    {/* <a href={project3} className="img-popup">
                       <span className="icon-plus-sign"></span>
-                    </a>
-                  </div> */}
+                      <AiOutlinePlus />
+                    </a> */}
+                  </div>
                   <div className="content-box">
                     <h3>
                       Roof restoration, installation and maintenance
@@ -115,11 +148,12 @@ const Portfolio = () => {
               <div className="project-three__single">
                 <div className="project-three__single-img">
                   <img src={project5} alt="client" />
-                  {/* <div className="icon-box">
-                    <a href={Heroe1} className="img-popup">
+                  <div className="icon-box">
+                    {/* <a href={project5} className="img-popup">
                       <span className="icon-plus-sign"></span>
-                    </a>
-                  </div> */}
+                      <AiOutlinePlus />
+                    </a> */}
+                  </div>
                   <div className="content-box">
                     <h3>
                       Gate house Renovation
