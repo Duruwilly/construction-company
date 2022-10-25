@@ -113,7 +113,7 @@ const Footer = () => {
                           <Link to="/contact">Contact</Link>
                         </li>
                         <li class="footer-widget__services-list-item">
-                          <Link to="/request-quote">Request Quote</Link>
+                          <Link to="/contact">Request Quote</Link>
                         </li>
                       </ul>
                     </div>
