@@ -85,10 +85,10 @@ const Contact = () => {
                     <div className="content-box">
                       <h2>Phone</h2>
                       <p className="number1">
-                        <a href="tel:123456789">+234(0) 80 6812 8586</a>
+                        <a href="tel:+234(0) 80 6812 8586">+234(0) 80 6812 8586</a>
                       </p>
                       <p className="number2">
-                        <a href="tel:123456789">+234(0) 80 5056 8433</a>
+                        <a href="tel:+234(0) 80 5056 8433">+234(0) 80 5056 8433</a>
                       </p>
                     </div>
                   </div>
