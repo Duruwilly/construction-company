@@ -140,7 +140,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       {/* <Link to="/terms-and-condition">Terms & Conditions</Link> */}
-                      <Link to="/request-quote">Request Quote</Link>
+                      <Link to="/contact">Request Quote</Link>
                     </li>
                     <li>
                       <Link to="/services"> Services</Link>

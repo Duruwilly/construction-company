@@ -59,7 +59,7 @@ const Heroe = () => {
                     </p>
                     <div className="btn-box">
                       <Link
-                        to="/"
+                        to="/contact"
                         className="thm-btn"
                         data-text="Request Quote"
                       >
@@ -89,7 +89,7 @@ const Heroe = () => {
                     </h2>
                     <p>At Hisest, We equally attach high premium to constant training of all cetegories of <br /> our personnel to meet with new challenges.</p>
                     <div className="btn-box">
-                      <Link to="/" className="thm-btn" data-text="Request Quote">
+                      <Link to="/contact" className="thm-btn" data-text="Request Quote">
                         Request Quote
                       </Link>
                     </div>
@@ -118,7 +118,7 @@ const Heroe = () => {
                     At Hisest, We equally attach high premium to constant training of all cetegories of <br /> our personnel to meet with new challenges.
                     </p>
                     <div className="btn-box">
-                      <Link to="/" className="thm-btn" data-text="Request Quote">
+                      <Link to="/contact" className="thm-btn" data-text="Request Quote">
                         Request Quote
                       </Link>
                     </div>
