@@ -467,8 +467,8 @@ button {
     display: inline-block;
     width: 60px;
     height: 70px;
-    background: var(--thm-base);
     position: fixed;
+    background: var(--thm-base);
     bottom: 93px;
     right: 20px;
     z-index: 99;
@@ -476,12 +476,11 @@ button {
     border-top-right-radius: 10px;
     text-align: center;
     transition: all 0.4s ease;
-    display: none;
     transition: all 0.4s ease;
     overflow: hidden;
 }
 
-.scroll-to-top i {
+.scroll-to-top .scroll-top {
     position: relative;
     display: inline-block;
     color: #ffffff;
@@ -493,7 +492,7 @@ button {
     background-color: var(--thm-black);
 }
 
-.scroll-to-top:hover i {
+.scroll-to-top:hover .scroll-top {
     color: #fff;
 }
 

@@ -98,13 +98,31 @@ const Teams = () => {
                   </div>
                   <div class="services-one__single-content">
                     <div class="services-one__single-content-title">
+                      <h2>
+                      General Manager: Olaseni Emmanuel. BSc, Surv&Geo,ANIS, Mosha(UK)
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* team 3 */}
+              <div
+                className="project-three__single wow fadeInUp"
+                data-wow-delay="0ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="services-one__single">
+                  <div className="services-one__single-img">
+                    <img src={Heroe1} alt="" />
+                  </div>
+                  <div class="services-one__single-content">
+                    <div class="services-one__single-content-title">
                       <h2>Oluwabunmi Samuel (DIP. MASCOM, B.Ed)</h2>
                     </div>
                   </div>
                 </div>
               </div>
-
-              {/* team 3 */}
+              {/* team 4 */}
               <div
                 className="project-three__single wow fadeInUp"
                 data-wow-delay="0ms"
@@ -121,24 +139,6 @@ const Teams = () => {
                   </div>
                 </div>
               </div>
-
-              {/* team 4 */}
-              <div
-                className="project-three__single wow fadeInUp"
-                data-wow-delay="0ms"
-                data-wow-duration="1500ms"
-              >
-                <div className="services-one__single">
-                  <div className="services-one__single-img">
-                    <img src={Heroe1} alt="" />
-                  </div>
-                  <div class="services-one__single-content">
-                    <div class="services-one__single-content-title">
-                      <h2>Oloruntobi Oyedeji</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
               {/* team 5 */}
               <div
                 className="project-three__single wow fadeInUp"
@@ -151,9 +151,7 @@ const Teams = () => {
                   </div>
                   <div class="services-one__single-content">
                     <div class="services-one__single-content-title">
-                      <h2>
-                        Olaseni Emmanuel (HND Surv, Bsc. Surv. ANIS, SURCON)
-                      </h2>
+                      <h2>Oloruntobi Oyedeji</h2>
                     </div>
                   </div>
                 </div>

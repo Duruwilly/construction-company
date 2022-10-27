@@ -13,6 +13,7 @@ import Services from './pages/Services';
 import { ScrollToTop } from './components/ScrollToTop';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import ScrollToTop2 from './components/ScrollToTop2';
 
 function App() {
   const [loader, setLoader] = useState(true)
@@ -36,6 +37,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <ScrollToTop2 />
       <Footer />
       </BrowserRouter>
     </div>
