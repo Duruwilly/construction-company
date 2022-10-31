@@ -1,12 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import contactBg from "../assets/images/contactBg.jpg";
 import "../assets/vendors/bootstrap/css/bootstrap.min.css";
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import IcomoonReact from "icomoon-react";
 import iconSet from "../../src/selection.json";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobilePhone: "",
+    subject: "",
+    message: "",
+  });
+
+  const onChange = (e) => {
+    setFormData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const { name, email, mobilePhone, subject, message } = formData;
+
+  const submitForm = async (e) => {
+    e.preventDefault();
+    toast.success("Message sent successfully");
+    setFormData({
+      name: "",
+      email: "",
+      mobilePhone: "",
+      subject: "",
+      message: "",
+    });
+  };
+
   return (
     <>
       {/* start header */}
@@ -24,7 +54,7 @@ const Contact = () => {
                   <div className="page-header__menu">
                     <ul>
                       <li>
-                        <Link to='/'>Home</Link>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>Contact Us</li>
                     </ul>
@@ -46,7 +76,9 @@ const Contact = () => {
               <div className="contact-page__content">
                 <div className="title">
                   <h2>Get In Touch</h2>
-                  <p>Feel free to request for a quote related to our services</p>
+                  <p>
+                    Feel free to request for a quote related to our services
+                  </p>
                 </div>
 
                 <div className="contact-page__content-single">
@@ -74,7 +106,7 @@ const Contact = () => {
                 <div className="contact-page__content-single">
                   <div className="contact-page__content-single-inner">
                     <div className="icon-box">
-                    <IcomoonReact
+                      <IcomoonReact
                         iconSet={iconSet}
                         icon="phone"
                         color="green"
@@ -97,7 +129,7 @@ const Contact = () => {
                 <div className="contact-page__content-single">
                   <div className="contact-page__content-single-inner">
                     <div className="icon-box">
-                    <IcomoonReact
+                      <IcomoonReact
                         iconSet={iconSet}
                         icon="envelop"
                         color="green"
@@ -108,10 +140,14 @@ const Contact = () => {
                     <div className="content-box">
                       <h2>Email </h2>
                       <p className="email1">
-                        <a href="mailto:hisestconsultandservices@gmail.com">hisestconsultandservices@gmail.com</a>
+                        <a href="mailto:hisestconsultandservices@gmail.com">
+                          hisestconsultandservices@gmail.com
+                        </a>
                       </p>
                       <p className="email2">
-                        <a href="mailto:hisestconsultandservices@yahoo.com">hisestconsultandservices@yahoo.com</a>
+                        <a href="mailto:hisestconsultandservices@yahoo.com">
+                          hisestconsultandservices@yahoo.com
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -124,26 +160,33 @@ const Contact = () => {
             <div className="col-xl-8 col-lg-8 col-md-7">
               <div className="contact-page__form">
                 <form
-                  
                   className="comment-one__form contact-form-validated"
-                  novalidate="novalidate"
+                  novalidate="novalidate" onSubmit={submitForm}
                 >
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
                         <input
+                          id="name"
                           type="text"
                           placeholder="Full name"
                           name="name"
+                          value={name}
+                          onChange={onChange}
+                          required
                         />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
                         <input
+                          id="email"
                           type="email"
                           placeholder="Email address"
                           name="email"
+                          value={email}
+                          onChange={onChange}
+                          required
                         />
                       </div>
                     </div>
@@ -151,7 +194,17 @@ const Contact = () => {
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
                       <div className="comment-form__input-box">
-                        <input type="text" placeholder="Phone" name="phone" />
+                        <input
+                          id="tel"
+                          type="tel"
+                          maxLength="11"
+                          minLength="9"
+                          placeholder="Phone"
+                          name="mobilePhone"
+                          value={mobilePhone}
+                          onChange={onChange}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
@@ -160,6 +213,9 @@ const Contact = () => {
                           type="text"
                           placeholder="Subject"
                           name="subject"
+                          value={subject}
+                          onChange={onChange}
+                          required
                         />
                       </div>
                     </div>
@@ -170,11 +226,14 @@ const Contact = () => {
                         <textarea
                           name="message"
                           placeholder="Your Message"
+                          value={message}
+                          onChange={onChange}
+                          required
                         ></textarea>
                       </div>
                       <button
-                      className="thm-btn comment-form__btn"
-                      data-text="Send Message"
+                        className="thm-btn comment-form__btn"
+                        data-text="Send Message"
                         type="submit"
                       >
                         Send Message
