@@ -27,7 +27,7 @@ const Mobilenav = ({ toggle }) => {
             <Link to="/services">Services</Link>
           </li>
           <li className="dropdown">
-            <Link to="/subsidiaries">Subsidiaries <BsArrowDownShort /></Link>
+            <span>Subsidiaries <BsArrowDownShort /></span>
             <ul>
               <li>
                 <Link to="/senitechplus">Senitechplus</Link>

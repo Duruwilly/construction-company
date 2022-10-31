@@ -8,6 +8,7 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import Logo from "../assets/images/HisestLogoWhite.png";
+import Newsletter from "./Newsletter";
 
 const Footer = () => {
   return (
@@ -26,8 +27,9 @@ const Footer = () => {
             <div className="col-x1-12">
               <div className="footer-one__top-inner">
                 <div className="row">
+                  {/* footer widget column */}
                   <div
-                    className="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+                    className="col-xl-3 col-lg-3 col-md-3 wow animated fadeInUp"
                     data-wow-delay="0.1s"
                   >
                     <div className="footer-widget__column footer-widget__about">
@@ -69,8 +71,9 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
+                  {/* footer widget column */}
                   <div
-                    class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+                    class="col-xl-3 col-lg-3 col-md-3 wow animated fadeInUp"
                     data-wow-delay="0.3s"
                   >
                     <div class="footer-widget__column footer-widget__services">
@@ -80,7 +83,13 @@ const Footer = () => {
                           <span>Civil Construction</span>
                         </li>
                         <li class="footer-widget__services-list-item">
-                          <span>Procurement</span>
+                          <span>Roof Installation</span>
+                        </li>
+                        <li class="footer-widget__services-list-item">
+                          <span>Roof Restoration</span>
+                        </li>
+                        <li class="footer-widget__services-list-item">
+                          <span>Roof maintenance</span>
                         </li>
                         <li class="footer-widget__services-list-item">
                           <span>Facility Management</span>
@@ -94,7 +103,7 @@ const Footer = () => {
 
                   {/* second widget */}
                   <div
-                    class="col-xl-4 col-lg-6 col-md-6 wow animated fadeInUp"
+                    class="col-xl-3 col-lg-3 col-md-3 wow animated fadeInUp"
                     data-wow-delay="0.3s"
                   >
                     <div class="footer-widget__column footer-widget__services">
@@ -118,6 +127,17 @@ const Footer = () => {
                       </ul>
                     </div>
                   </div>
+
+                  {/* third widget */}
+                  <div
+                    class="col-xl-3 col-lg-3 col-md-3 wow animated fadeInUp"
+                    data-wow-delay="0.3s"
+                  >
+                    <div class="footer-widget__column footer-widget__services">
+                      <h2 class="footer-widget__title">Newsletter</h2>
+                      <Newsletter />
+                      </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -139,15 +159,15 @@ const Footer = () => {
                 <div class="footer-one__bottom-list">
                   <ul>
                     <li>
-                      {/* <Link to="/terms-and-condition">Terms & Conditions</Link> */}
-                      <Link to="/contact">Request Quote</Link>
+                      <Link to="/terms-and-condition">Terms & Conditions</Link>
+                      {/* <Link to="/contact">Request Quote</Link> */}
                     </li>
                     <li>
                       <Link to="/services"> Services</Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link to="/careers">Careers</Link>
-                    </li> */}
+                    </li>
                   </ul>
                 </div>
               </div>

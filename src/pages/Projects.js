@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import projectBg from "../assets/images/projectBg.jpg";
+import projectBg from "../assets/images/projectBg.jpeg";
 import FullProjects from '../components/FullProject';
 
 

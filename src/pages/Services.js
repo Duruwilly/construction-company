@@ -13,12 +13,12 @@ import Heroe1 from "../assets/images/heroe1.jpg";
 import service2 from "../assets/images/trailer-park.jpeg";
 import Heroe2 from "../assets/images/heroe2.jpg";
 import Heroe3 from "../assets/images/heroe3.jpg";
-import Service from "../assets/images/services.jpg";
+import Service from '../assets/images/services.jpg'
 import procurement from "../assets/images/procurement.jpg";
 import procurement2 from "../assets/images/procurement4.jpeg";
 import services3 from "../assets/images/steel.jpg";
 import services4 from "../assets/images/roof.jpg";
-import ServiceBg from "../assets/images/servicesBg.jpg";
+import ServiceBg from "../assets/images/ServicesBeg.jpg";
 import BgPattern from "../assets/images/shapes/why-choose-v2-shape1.png";
 import $ from "jquery";
 import "../../node_modules/jquery.appear/jquery.appear";

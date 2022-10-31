@@ -4891,6 +4891,39 @@ button {
     color: #ffffff;
 }
 
+.newsletter input {
+    margin: 8px 0px;
+    width: 100%;
+    padding: 12px;
+    display: block;
+    border: none;
+    background: #fff;
+    color: rgb(209, 213, 219);
+}
+
+.newsletter input:focus {
+    outline: none;
+    border: 2px solid var(--thm-base);
+    color: #000000;
+}
+
+.newsletter-div {
+    position: relative;
+    display: block;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    color: #fff;
+    background: var(--thm-base);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
 
 /*** 
 ============================================

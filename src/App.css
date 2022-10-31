@@ -139,7 +139,7 @@ position: fixed;
  height: 3.5rem;
 }
 
-.nav-menu>li>a {
+.nav-menu>li>a, .nav-menu>li>span {
  padding-top: 36px;
  padding-bottom: 36px;
 }
@@ -161,8 +161,9 @@ position: fixed;
  margin-left: 54px;
 }
 
-.nav-menu>li>a {
+.nav-menu>li>a, .nav-menu>li>span {
  position: relative;
+ cursor: pointer;
  display: inline-block;
  color: var(--thm-black);
  font-size: 18px;
@@ -176,7 +177,7 @@ position: fixed;
 }
 
 .nav-menu>li.current>a,
-.nav-menu>li:hover>a {
+.nav-menu>li:hover>a, .nav-menu>li:hover>span {
  color: var(--thm-base);
 }
 
@@ -186,12 +187,12 @@ position: fixed;
 }
 
 .nav-menu>li.current>a::before,
-.nav-menu>li:hover>a::before {
+.nav-menu>li:hover>a::before, .nav-menu>li:hover>span::before {
  transform: scale(1, 1);
  transform-origin: right center;
 }
 
-.nav-menu>li.dropdown>a::before {
+.nav-menu>li.dropdown>span::before {
  position: absolute;
  right: -15px;
  font-family: 'icomoon' !important;
@@ -205,7 +206,7 @@ position: fixed;
 }
 
 .nav-menu>li.current.dropdown>a::before,
-.nav-menu>li:hover.dropdown>a::before {
+.nav-menu>li:hover.dropdown>span::before {
  color: var(--thm-base);
 }
 
@@ -409,7 +410,8 @@ position: fixed;
  position: relative;
 }
 
-.mobile-menu>li>a {
+.mobile-menu>li>a, .mobile-menu>li>span {
+ cursor: pointer;
  position: relative;
  display: inline-block;
  color: #fff;
@@ -424,7 +426,7 @@ position: fixed;
 }
 
 .mobile-menu>li.current>a,
-.mobile-menu>li:hover>a {
+.mobile-menu>li:hover>a, .mobile-menu>li:hover>span {
  color: var(--thm-base);
 }
 
@@ -433,12 +435,12 @@ position: fixed;
 }
 
 .mobile-menu>li.current>a::before,
-.mobile-menu>li:hover>a::before {
+.mobile-menu>li:hover>a::before, .mobile-menu>li:hover>span::before {
  transform: scale(1, 1);
  transform-origin: right center;
 }
 
-.mobile-menu>li.dropdown>a::before {
+.mobile-menu>li.dropdown>span::before {
  position: absolute;
  right: -15px;
  font-family: 'icomoon' !important;
@@ -452,7 +454,7 @@ position: fixed;
 }
 
 .mobile-menu>li.current.dropdown>a::before,
-.mobile-menu>li:hover.dropdown>a::before {
+.mobile-menu>li:hover.dropdown>span::before {
  color: var(--thm-base);
 }
 

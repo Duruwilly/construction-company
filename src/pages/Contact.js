@@ -173,7 +173,8 @@ const Contact = () => {
                         ></textarea>
                       </div>
                       <button
-                        className="thm-btn1 comment-form__btn"
+                      className="thm-btn comment-form__btn"
+                      data-text="Send Message"
                         type="submit"
                       >
                         Send Message

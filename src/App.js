@@ -7,6 +7,8 @@ import "./style.css";
 import Home from './pages/Home'
 import Navbar from './components/Navbar';
 import jQuery from 'jquery';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Footer from './components/Footer';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -40,6 +42,7 @@ function App() {
       <ScrollToTop2 />
       <Footer />
       </BrowserRouter>
+      <ToastContainer />
     </div>
   );
 }

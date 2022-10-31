@@ -33,9 +33,9 @@ const Navbar = () => {
               <Link to="/services">Services</Link>
             </li>
             <li className="dropdown">
-              <Link to="">
+              <span>
                 Subsidiaries <BsArrowDownShort />
-              </Link>
+              </span>
               <ul>
                 <li>
                   <Link to="/senitechplus">Senitechplus</Link>
