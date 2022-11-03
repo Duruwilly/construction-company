@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import contactBg from "../assets/images/contactBg.jpg";
 import "../assets/vendors/bootstrap/css/bootstrap.min.css";
@@ -6,15 +6,27 @@ import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 import IcomoonReact from "icomoon-react";
 import iconSet from "../../src/selection.json";
 import { toast } from "react-toastify";
+import {
+  validateEmail,
+  validateFullName,
+  validatePhone,
+} from "../components/Validations";
+import InlineError from "../components/InlineError";
+import { SendEmail } from "../API";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    mobilePhone: "",
+    phone: "",
     subject: "",
     message: "",
   });
+  const [nameError, setNameError] = useState();
+  const [emailError, setEmailError] = useState();
+  const [phoneError, setPhoneError] = useState();
+  const [buttonLoading, setButtonLoading] = useState(false);
+  const [send, setSend] = useState();
 
   const onChange = (e) => {
     setFormData((prevState) => ({
@@ -23,18 +35,32 @@ const Contact = () => {
     }));
   };
 
-  const { name, email, mobilePhone, subject, message } = formData;
+  const { name, email, phone, subject, message } = formData;
+
+  useEffect(() => {
+    // ****** Validation ******
+    validateFullName({ name, setNameError });
+    validateEmail({ email, setEmailError });
+    validatePhone({ phone, setPhoneError });
+
+    // *******
+  }, [name, email, phone, subject, message]);
 
   const submitForm = async (e) => {
     e.preventDefault();
-    toast.success("Message sent successfully");
+    if (!nameError & !emailError & !phoneError) {
+      SendEmail({ name, email, phone, subject, message, setSend });
+      toast.success("Message sent successfully");
+    }
     setFormData({
       name: "",
       email: "",
-      mobilePhone: "",
+      phone: "",
       subject: "",
       message: "",
     });
+    
+    
   };
 
   return (
@@ -140,13 +166,8 @@ const Contact = () => {
                     <div className="content-box">
                       <h2>Email </h2>
                       <p className="email1">
-                        <a href="mailto:hisestconsultandservices@gmail.com">
-                          hisestconsultandservices@gmail.com
-                        </a>
-                      </p>
-                      <p className="email2">
-                        <a href="mailto:hisestconsultandservices@yahoo.com">
-                          hisestconsultandservices@yahoo.com
+                        <a href="mailto:info@hisestech.com">
+                          info@hisestech.com
                         </a>
                       </p>
                     </div>
@@ -161,7 +182,7 @@ const Contact = () => {
               <div className="contact-page__form">
                 <form
                   className="comment-one__form contact-form-validated"
-                  novalidate="novalidate" onSubmit={submitForm}
+                  onSubmit={submitForm}
                 >
                   <div className="row">
                     <div className="col-xl-6 col-lg-6">
@@ -175,6 +196,7 @@ const Contact = () => {
                           onChange={onChange}
                           required
                         />
+                        {nameError && <InlineError error={nameError} />}
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
@@ -188,6 +210,7 @@ const Contact = () => {
                           onChange={onChange}
                           required
                         />
+                        {emailError && <InlineError error={emailError} />}
                       </div>
                     </div>
                   </div>
@@ -197,14 +220,13 @@ const Contact = () => {
                         <input
                           id="tel"
                           type="tel"
-                          maxLength="11"
-                          minLength="9"
                           placeholder="Phone"
-                          name="mobilePhone"
-                          value={mobilePhone}
+                          name="phone"
+                          value={phone}
                           onChange={onChange}
                           required
                         />
+                        {phoneError && <InlineError error={phoneError} />}
                       </div>
                     </div>
                     <div className="col-xl-6 col-lg-6">
@@ -232,6 +254,7 @@ const Contact = () => {
                         ></textarea>
                       </div>
                       <button
+                        disabled={nameError || emailError || phoneError}
                         className="thm-btn comment-form__btn"
                         data-text="Send Message"
                         type="submit"
